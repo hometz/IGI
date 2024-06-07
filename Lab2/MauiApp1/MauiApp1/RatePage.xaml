@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.RatePage"
+             Title="RatePage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="5" Margin="3">
+            <HorizontalStackLayout Spacing="5" HorizontalOptions="CenterAndExpand" WidthRequest="400">
+                <Entry x:Name="Countity" Placeholder="Введите сумму"/>
+                <Entry x:Name="Date" Placeholder="Введите дату"/>
+                <Button x:Name="Enter" Text="Enter" Clicked="OnEnterClicked"/>
+            </HorizontalStackLayout>
+            <Frame>
+                <Label x:Name="Ruble"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="Euro"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="USD"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="Swlnd"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="China"/>
+            </Frame>
+            <Frame>
+                <Label x:Name="UK"/>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
